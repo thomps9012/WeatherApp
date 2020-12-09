@@ -47,7 +47,9 @@ function App() {
   }
   return (
     <div className="App">
-      <h3>Weather App</h3>
+      <br></br>
+      <h1 id="title">Weather App</h1>
+      <br></br>
       <Form getWeather={fetchData} />
 
       <Weather

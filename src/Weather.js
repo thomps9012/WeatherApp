@@ -7,16 +7,13 @@ const Weather = ({description, city, country, error, temperature, humidity, wind
  return(
         <div>
             <br></br>
-            {city && country && <p>{city}, {country}</p>}
-            <br></br>
-            {icon && <img src={weatherIcon}></img>}
-            {description && <p>Conditions: {description}</p>}
-            
-            {temperature && <p>Temperature: {temperature} °F</p>}
-            {humidity && <p>Humidity: {humidity} %</p>}
-            {wind && <p>Wind Speed: {wind} mph</p>}
-            
-            {error && <p>{error}</p>}
+            {city && country && <h2>{city}, {country}</h2>}
+            {icon && <img src={weatherIcon} alt="weather icon"></img>}
+            {description && <h5>Conditions: {description}</h5>}
+            {temperature && <h5>Temperature: {temperature} °F</h5>}
+            {humidity && <h5>Humidity: {humidity} %</h5>}
+            {wind && <h5>Wind Speed: {wind} mph</h5>}
+            {error && <h5>{error}</h5>}
             
         </div>
     )

@@ -8,12 +8,16 @@ const Form = (props) => {
                 placeholder='city'
                 name='city'
                 />
+                <br></br>
+                <br></br>
             <input
                 type='text'
                 placeholder='country'
                 name='country'
                 />
-                <button>Submit</button>
+                <br></br>
+                <br></br>
+                <button class="btn btn-outline-dark btn-lg">Submit</button>
         </form>
     )
 }
