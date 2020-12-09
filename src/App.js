@@ -28,7 +28,8 @@ function App() {
       temperature: apiData.main.temp,
       humidity: apiData.main.humidity,
       wind: apiData.wind.speed,
-      error: ""
+      error: "",
+      icon: apiData.weather[0].icon
     }
     )}else{
       setWeather({
@@ -39,6 +40,7 @@ function App() {
         temperature: '',
         humidity: '',
         wind: '',
+        icon: '',
         error: "Please Type a City and Country"
     })
   }
@@ -56,6 +58,7 @@ function App() {
         humidity={weather.humidity}
         wind={weather.wind}
         error={weather.error}
+        icon={weather.icon}
       />
 
       {console.log(weather.data)}
